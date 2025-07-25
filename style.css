@@ -1,88 +1,167 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-header,main{
+
+header,
+main {
     max-width: 1140px;
     margin: 0px auto;
 }
 
 /* shared style */
+.dark_1 {
+    font-size: 1rem;
+    color: rgba(137, 135, 161, 1);
+}
+
+.dark_2 {
+    font-size: 1rem;
+    color: rgba(37, 36, 50, 1);
+}
+
+.design_text{
+   color: rgba(233, 90, 8, 1);
+}
+.title_3{
+    font-size: 2rem;
+    color: rgba(37, 36, 50, 1);;
+}
+.design_text2{
+    font-size: 1.2rem;
+    color: rgba(137, 135, 161, 1);
+}
 
 
 /* nav style */
-.nav_bar{
+.nav_bar {
     margin: 10px auto;
     display: flex;
     justify-content: space-between;
-  
+
 }
-.nav_list{
+
+.nav_list {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 2rem;
 }
-.nav_list_1 ul{
+
+.nav_list_1 ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
-.nav_list_1 ul a{
+
+.nav_list_1 ul a {
     text-decoration: none;
 }
-.nav_img{
+
+.nav_img {
     width: 100px;
     height: 50px;
 }
-.nav_img img{
-    
+
+.nav_img img {
+
     width: 100%;
     height: 100%;
 }
-.nav_list_2 img{
+
+.nav_list_2 img {
     width: 24px;
     height: 24px;
 }
-.nav_list_2{
+
+.nav_list_2 {
     align-items: center;
     display: flex;
     gap: 5px;
-    
+
 }
-.nav_list_2 a{
+
+.nav_list_2 a {
     text-decoration: none;
 }
 
+.fresh_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgba(37, 36, 50, 1);
+}
+
 /* fresh flower */
-.fresh_flowers{
+.fresh_flowers {
     margin-top: 100px;
     display: flex;
-   
+    gap: 400px;
+
     align-items: flex-end;
 }
-.fresh_image{
+
+
+
+.fresh_image img {
     width: 100%;
 }
-.fresh_title{
+
+.fresh_title {
     margin-bottom: 13px;
 }
 
-
+/* out plants */
+.plants{
+    margin-top: 120px;
+}
+.plants_info{
+    text-align: center;
+}
+.plants_description{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.plant_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.card_btn{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgba(233, 90, 8, 1);;
+}
+.card img{
+    width: 100%;
+}
 
 /* media query */
-@media screen and (max-width:576px){
-   
-     .nav_list_1{
+@media screen and (max-width:576px) {
+
+    .nav_list_1 {
         display: none;
-     }
-     .fresh_flowers{
+    }
+    .nav_bar{
+         margin: 0px 10px;
+    }
+
+    .fresh_flowers {
         flex-direction: column-reverse;
         gap: 100px;
-     }
-     .fresh_image{
-       width: 100%;
-}
+    }
+
+    .fresh_image img {
+        width: 100%;
+         padding: 0px 10px;
+
+    }
+    .fresh_info{
+        margin: 0px 10px;
+
+    }
+    .plant_container{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
