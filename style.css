@@ -26,12 +26,20 @@ main {
 }
 .title_3{
     font-size: 2rem;
+    font-weight: bold;
     color: rgba(37, 36, 50, 1);;
 }
 .design_text2{
     font-size: 1.2rem;
     color: rgba(137, 135, 161, 1);
 }
+.off{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+
+}
+
 
 
 /* nav style */
@@ -137,6 +145,87 @@ main {
     width: 100%;
 }
 
+/* lover section */
+.lover{
+    margin-top: 0px;
+    display: flex;
+    gap: 100px;
+   
+}
+
+.lover_image img{
+    width: 100%;
+   
+  
+}
+.lover_info{
+    margin-top: 20px;
+}
+.lover_title{
+    margin-bottom: 40px;
+}
+.lover_info ul li{
+   margin-bottom: 30px  
+}
+
+/* sticker */
+.sticker img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 240px;
+    top: 100px;
+}
+
+/* deals  */
+.deals{
+    margin-top: 100px;
+}
+.deals_info{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+
+.deal1{
+    background-image: url(./images/deal-ana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    grid-area: deal1;
+}
+.deal2{
+    background-image: url(./images/deal-bloom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+     grid-area: deal2;
+}
+.deal3{
+    background-image: url(./images/deal-zabo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+     grid-area: deal3;
+}
+.deals_container{
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-areas:
+    "deal1 deal2 deal2" 
+    "deal3 deal2 deal2"
+    ;
+    grid-template-columns: 1fr 2fr;
+ 
+    gap: 20px;
+}
+
+
+
+
+
 /* media query */
 @media screen and (max-width:576px) {
 
@@ -163,5 +252,26 @@ main {
     }
     .plant_container{
         grid-template-columns: repeat(2,1fr);
+        margin: 0px 10px;
     }
+    .lover{
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+    .lover{
+        margin-top: 50px;
+    }
+    .sticker{
+        display: none;
+    }
+      .deals_container {
+    display: grid;
+    grid-template-areas:
+      "deal1"
+      "deal2"
+      "deal3";
+    grid-template-columns: 1fr; /* এক কলাম */
+    gap: 20px;
+  }
+   
 }
