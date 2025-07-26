@@ -442,6 +442,7 @@ main,.footer{
    .deal1, .deal2, .deal3 {
     height: 200px; 
   }
+  
   .footer{
     margin: 10px 10px;
     flex-direction: column;
@@ -452,6 +453,9 @@ main,.footer{
 }
 .footer_quick{
     grid-template-columns: 1fr;
+}
+.bunch_title{
+    text-align: center;
 }
 
   
