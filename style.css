@@ -5,7 +5,7 @@
 }
 
 header,
-main {
+main,.footer{
     max-width: 1140px;
     margin: 0px auto;
 }
@@ -302,7 +302,7 @@ main {
 }
 /* bunch section */
 .bunch{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     background-image: url("./images/news-letter-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -339,7 +339,40 @@ main {
      color: white
     
 }
-
+/* footer section */
+.footer{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer_info{
+    width: 20%;
+}
+.footer_quick{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.footer_quick a{
+    text-decoration: none;
+    color: rgba(137, 135, 161, 1);
+}
+.footer_media{
+  
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+    
+}
+.footer_media .twt{
+    margin-top: 7px;
+}
+.fid p{
+    
+ color: rgba(137, 135, 161, 1);
+}
 
 
 
@@ -405,6 +438,17 @@ main {
    .deal1, .deal2, .deal3 {
     height: 200px; 
   }
+  .footer{
+    margin: 10px 10px;
+    flex-direction: column;
+    gap: 50px;
+  }
+ .footer_info{
+    width: 100%;
+}
+.footer_quick{
+    grid-template-columns: 1fr;
+}
   
  
 
